@@ -3,6 +3,7 @@ package javabanco.entidade;
 import java.util.ArrayList;
 
 public class ContaCorrente {
+	
 	private int saldo;
 	private ArrayList<Float> operacoes = new ArrayList<Float>();
 		public int getSaldo() {

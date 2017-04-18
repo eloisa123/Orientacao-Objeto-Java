@@ -3,6 +3,7 @@ package javabanco;
 import java.util.ArrayList;
 
 import javabanco.entidade.ContaCorrente;
+import javabanco.entidade.Operacoes;
 
 public class TiposDeVariaveis {
 
@@ -42,11 +43,15 @@ public class TiposDeVariaveis {
 		
 		System.out.println("cc1.getSaldo() após débito: " + cc1.getSaldo());
 		
-		System.out.print("cc1.extrato(): " + cc1.extrato());
+		System.out.println("cc1.extrato(): " + cc1.extrato());
+		
+		Operacoes o1 = new Operacoes(500, "CREDITO");
+		Operacoes o2 = new Operacoes(300, "DEBITO");
 		
 		
+		System.out.println("o1: " + o1.getValor() + ", " + o1.getTipoOperacoes() + ", " + o1.getDataHora());
+		System.out.println("o2: " + o2.getValor() + ", " + o2.getTipoOperacoes() + ", " + o2.getDataHora());
 		
-
-	}
+}
 
 }
