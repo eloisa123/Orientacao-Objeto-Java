@@ -23,7 +23,7 @@ public class Operacoes {
 	}
 
 	public float getValor() {
-		return valor;;
+		return valor;
 	}
 
 
